@@ -13,13 +13,11 @@ void rev_string(char *s)
 	int j = 0;
 	char temp;
 
-	/* Get the length of the string */
 	while (s[j] != '\0')
 		j++;
 
-	j--; /* Move j to the last character index */
+	j--; 
 
-	/* Swap characters from the ends toward the center */
 	while (i < j)
 	{
 		temp = s[i];
